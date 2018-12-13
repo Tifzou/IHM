@@ -13,7 +13,6 @@
         android:layout_weight="1"
         android:src="@android:drawable/stat_notify_chat"
         android:tint="#ffff0000"
-        android:backgroundTintMode="screen"
         android:contentDescription="@string/chat" />
 
     <ImageButton
@@ -23,7 +22,6 @@
         android:layout_weight="1"
         android:src="@android:drawable/ic_menu_agenda"
         android:tint="#ffff0000"
-        android:backgroundTintMode="screen"
         android:contentDescription="@string/taches" />
 
     <ImageButton
@@ -33,7 +31,6 @@
         android:layout_weight="1"
         android:src="@android:drawable/ic_dialog_info"
         android:tint="#ffff0000"
-        android:backgroundTintMode="screen"
         android:contentDescription="@string/groupe" />
 
     <ImageButton
@@ -42,7 +39,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@android:drawable/ic_dialog_dialer"
-        android:backgroundTintMode="screen"
         android:tint="#ffff0000"
         android:contentDescription="@string/dashboard" />
 </LinearLayout>
