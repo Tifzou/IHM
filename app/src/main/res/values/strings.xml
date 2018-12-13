@@ -12,6 +12,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- Strings related to the dashboard -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -19,4 +22,10 @@
     <string name="message_non_lus">Message non lus</string>
     <string name="t_ches_restantes">Tâches restantes</string>
     <string name="_3_t_ches_les_plus_urgentes">3 tâches les plus urgentes</string>
+
+    <!-- Strings related to the bottom navigation bar -->
+    <string name="taches">Tâches</string>
+    <string name="chat">Chat</string>
+    <string name="groupe">Groupe</string>
+    <string name="dashboard">Dashboard</string>
 </resources>
