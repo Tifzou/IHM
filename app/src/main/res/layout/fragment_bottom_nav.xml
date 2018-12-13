@@ -1,82 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundGravity="bottom"
+    android:gravity="bottom"
     tools:context=".BottomNavFrag">
 
-    <LinearLayout
-        android:id="@+id/bottomNavBar"
+    <ImageButton
+        android:id="@+id/chatButton"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:elevation="5dp"
-        android:layout_gravity="bottom"
-        android:orientation="horizontal"
-        android:paddingTop="5dp">
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/stat_notify_chat"
+        android:tint="#ffff0000"
+        android:backgroundTintMode="screen"
+        android:contentDescription="@string/chat" />
 
+    <ImageButton
+        android:id="@+id/tasksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_menu_agenda"
+        android:tint="#ffff0000"
+        android:backgroundTintMode="screen"
+        android:contentDescription="@string/taches" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/group_infoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="#ffff0000"
+        android:backgroundTintMode="screen"
+        android:contentDescription="@string/groupe" />
 
-            <RadioButton
-                android:id="@+id/matching"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:button="@null"
-                android:checked="false"
-                android:gravity="center"
-                android:padding="2dp"
-                android:text="Chat"
-                android:drawableTop="@android:drawable/ic_popup_reminder"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/watchList"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:button="@null"
-                android:checked="false"
-                android:gravity="center"
-                android:padding="2dp"
-                android:text="Tâches"
-                android:textColor="@color/colorPrimary"
-                android:drawableTop="@android:drawable/ic_menu_my_calendar"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/rates"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:button="@null"
-                android:checked="false"
-                android:gravity="center"
-                android:padding="2dp"
-                android:text="Groupe"
-                android:drawableTop="@android:drawable/ic_dialog_info"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/deals"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:button="@null"
-                android:checked="false"
-                android:gravity="center"
-                android:padding="2dp"
-                android:text="Dashboard"
-                android:drawableTop="@android:drawable/ic_dialog_dialer"
-                android:textSize="12sp" />
-        </RadioGroup>
-    </LinearLayout>
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/dashboardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_dialog_dialer"
+        android:backgroundTintMode="screen"
+        android:tint="#ffff0000"
+        android:contentDescription="@string/dashboard" />
+</LinearLayout>
