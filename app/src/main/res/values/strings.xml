@@ -38,4 +38,5 @@
         <item>E</item>
         <item>F</item>
     </string-array>
+    <string name="add_button">+</string>
 </resources>
