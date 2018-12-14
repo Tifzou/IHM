@@ -16,20 +16,18 @@ public class BottomNavFrag extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bottom_nav, container, false);
 
-        /* TODO: do the same thing for Chat button
-        ImageButton mChatButton = (ImageButton) getView().findViewById(R.id.chat);
+        ImageButton mChatButton = (ImageButton) view.findViewById(R.id.chatButton);
         mChatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.group_info:
-                        Intent chatActivity = new Intent(getActivity(), Chat.class);
+                    case R.id.chatButton:
+                        Intent chatActivity = new Intent(getActivity(), ChatActivity.class);
                         startActivity(chatActivity);
                         break;
                 }
             }
         });
-         */
 
         ImageButton mDashboardButton = view.findViewById(R.id.dashboardButton);
         mDashboardButton.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +42,7 @@ public class BottomNavFrag extends Fragment {
             }
         });
         /* TODO: do the same thing for Tasks button
-        ImageButton mTasksButton = (ImageButton) getView().findViewById(R.id.tasksButton);
+        ImageButton mTasksButton = (ImageButton) view.findViewById(R.id.tasksButton);
         mTasksButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,7 +56,7 @@ public class BottomNavFrag extends Fragment {
         });
          */
         /* TODO: do the same thing for Group info button
-        ImageButton mGroupInfoButton = (ImageButton) getView().findViewById(R.id.group_infoButton);
+        ImageButton mGroupInfoButton = (ImageButton) view.findViewById(R.id.group_infoButton);
         mGroupInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

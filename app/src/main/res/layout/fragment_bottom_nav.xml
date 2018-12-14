@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:src="@android:drawable/stat_notify_chat"
+        android:src="@android:drawable/sym_action_chat"
+        android:background="@android:color/transparent"
         android:tint="#ffff0000"
         android:contentDescription="@string/chat" />
 
@@ -22,6 +23,7 @@
         android:layout_weight="1"
         android:src="@android:drawable/ic_menu_agenda"
         android:tint="#ffff0000"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/taches" />
 
     <ImageButton
@@ -31,6 +33,7 @@
         android:layout_weight="1"
         android:src="@android:drawable/ic_dialog_info"
         android:tint="#ffff0000"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/groupe" />
 
     <ImageButton
@@ -40,5 +43,6 @@
         android:layout_weight="1"
         android:src="@android:drawable/ic_dialog_dialer"
         android:tint="#ffff0000"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/dashboard" />
 </LinearLayout>

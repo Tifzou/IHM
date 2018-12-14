@@ -63,9 +63,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
 
+    private static User currentUser;
+
+    public static User getCurrentUser() {
+        return currentUser;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        currentUser = new User();
         setContentView(R.layout.activity_login);
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -90,6 +97,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 attemptLogin();
                 switch (view.getId()) {
                     case R.id.email_sign_in_button:
+                        currentUser.id = "0";
                         Intent dashboardActivity = new Intent(LoginActivity.this, Dashboard.class);
                         startActivity(dashboardActivity);
                         break;
