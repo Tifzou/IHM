@@ -21,7 +21,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="message_non_lus">Message non lus</string>
     <string name="t_ches_restantes">Tâches restantes</string>
-    <string name="_3_t_ches_les_plus_urgentes">3 tâches les plus urgentes</string>
+    <string name="t_ches_les_plus_urgentes">Tâches les plus urgentes</string>
 
     <!-- Strings related to the bottom navigation bar -->
     <string name="taches">Tâches</string>
