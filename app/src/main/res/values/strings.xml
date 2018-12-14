@@ -28,4 +28,5 @@
     <string name="chat">Chat</string>
     <string name="groupe">Groupe</string>
     <string name="dashboard">Dashboard</string>
+    <string name="add_button">+</string>
 </resources>
