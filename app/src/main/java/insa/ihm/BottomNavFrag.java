@@ -43,20 +43,20 @@ public class BottomNavFrag extends Fragment {
                 }
             }
         });
-        /* TODO: do the same thing for Tasks button
+
         ImageButton mTasksButton = (ImageButton) view.findViewById(R.id.tasksButton);
         mTasksButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.tasksButton:
-                        Intent tasksActivity = new Intent(getActivity(), Tasks.class);
+                        Intent tasksActivity = new Intent(getActivity(), ProjectDetails.class);
+                        // FIXME : test for now
                         startActivity(tasksActivity);
                         break;
                 }
             }
         });
-         */
 
         ImageButton mGroupInfoButton = (ImageButton) view.findViewById(R.id.group_infoButton);
         mGroupInfoButton.setOnClickListener(new View.OnClickListener() {

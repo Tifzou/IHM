@@ -13,15 +13,16 @@ public class GroupInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_list);
-
         String[] noms = new String[] {"A", "B", "C"};
 
         ListView view = (ListView) findViewById(R.id.member_list_view);
 
-        if (view == null)
-            System.out.println("XXXXXXXX");
         ArrayAdapter<String> adapter = new MemberListAdapter(this, noms);
         view.setAdapter(adapter);
+
+
+
+
     }
 
 

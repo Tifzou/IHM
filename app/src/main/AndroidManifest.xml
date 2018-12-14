@@ -31,6 +31,10 @@
             android:name=".GroupInfo"
             android:label="GroupInfo">
         </activity>
+        <activity
+            android:name=".ProjectDetails"
+            android:label="ProjectDetails">
+        </activity>
     </application>
 
 </manifest>
