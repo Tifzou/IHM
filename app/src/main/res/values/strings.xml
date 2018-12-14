@@ -29,4 +29,6 @@
     <string name="groupe">Groupe</string>
     <string name="dashboard">Dashboard</string>
     <string name="add_button">+</string>
+    <string name="pr_sentation_ihm">Présentation IHM</string>
+    <string name="nb_ressource">3</string>
 </resources>

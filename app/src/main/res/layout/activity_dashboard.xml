@@ -18,8 +18,7 @@
         android:paddingTop="0dp"
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:gravity="top">
 
         <fragment
             android:id="@+id/bottomNavBar"
@@ -60,6 +59,23 @@
             android:layout_marginTop="114dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
+            android:contentDescription="@string/t_ches_restantes"
+            app:srcCompat="@android:drawable/bottom_bar" />
+
+        <ImageButton
+            android:id="@+id/tache_rest2"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="247dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
             android:contentDescription="@string/t_ches_restantes"
             app:srcCompat="@android:drawable/bottom_bar" />
 
@@ -104,7 +120,7 @@
             android:layout_marginEnd="42dp"
             android:layout_marginRight="42dp"
             android:background="@drawable/ic_button_add"
-            android:text="3"
+            android:text="@string/nb_ressource"
             tools:text="3" />
 
         <Button
@@ -118,11 +134,10 @@
             android:layout_marginEnd="41dp"
             android:layout_marginRight="41dp"
             android:background="@drawable/ic_button_add"
-            android:text="3"
-            tools:text="3" />
+            android:text="@string/nb_ressource" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tache_urg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -134,6 +149,54 @@
             android:text="@string/t_ches_les_plus_urgentes"
             android:textSize="18sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tache_urg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tache_rest2"
+            android:layout_alignBottom="@+id/tache_rest2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/pr_sentation_ihm"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/drop_tache_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tache_rest2"
+            android:layout_alignEnd="@+id/tache_rest2"
+            android:layout_alignRight="@+id/tache_rest2"
+            android:layout_alignBottom="@+id/tache_rest2"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="24dp"
+            android:onClick="toggle_contents"
+            android:contentDescription="@string/pr_sentation_ihm"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+
+        <TextView
+            android:id="@+id/droptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomNavBar"
+            android:layout_below="@+id/tache_rest2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="104dp"
+            android:text="gchcgchgchcchkchgckhchc"/>
 
     </RelativeLayout>
 
