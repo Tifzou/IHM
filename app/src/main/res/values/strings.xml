@@ -28,4 +28,14 @@
     <string name="chat">Chat</string>
     <string name="groupe">Groupe</string>
     <string name="dashboard">Dashboard</string>
+
+
+    <string-array name="array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
 </resources>
