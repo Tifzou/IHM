@@ -29,7 +29,16 @@
         <activity
             android:name=".ChatActivity"
             android:label="@string/title_activity_chat"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".GroupInfo"
+            android:label="GroupInfo">
+        </activity>
+        <activity
+            android:name=".ProjectDetails"
+            android:label="ProjectDetails">
+        </activity>
     </application>
 
 </manifest>
