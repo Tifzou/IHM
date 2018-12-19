@@ -37,7 +37,7 @@ public class ProjectDetails extends AppCompatActivity {
 
         setContentView(R.layout.task_details);
 
-        RatingBar ratingBar = findViewById(R.id.ratingBar);
+        RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
 
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override

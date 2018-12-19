@@ -24,7 +24,7 @@ public class Dashboard extends AppCompatActivity {
         // hide until its title is clicked
         txt_help_gest.setVisibility(View.GONE);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+//        mTextMessage = (TextView) findViewById(R.id.message); FIXME : no ressource with id 'message' in activity ?
     }
 
     /**

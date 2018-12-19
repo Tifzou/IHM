@@ -31,7 +31,7 @@ public class BottomNavFrag extends Fragment {
         });
          */
 
-        ImageButton mDashboardButton = view.findViewById(R.id.dashboardButton);
+        ImageButton mDashboardButton = (ImageButton) view.findViewById(R.id.dashboardButton);
         mDashboardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
         android:padding="0dp"
@@ -18,7 +18,9 @@
         android:paddingTop="0dp"
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
-        android:gravity="top">
+        android:gravity="top"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
 
         <fragment
             android:id="@+id/bottomNavBar"
