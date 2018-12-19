@@ -27,14 +27,14 @@
             android:name=".Dashboard"
             android:label="@string/title_activity_dashboard">
         </activity>
-        <activity
+        <!--activity
             android:name=".GroupInfo"
             android:label="GroupInfo">
-        </activity>
-        <activity
+        </activity-->
+        <!--activity
             android:name=".ProjectDetails"
             android:label="ProjectDetails">
-        </activity>
+        </activity-->
     </application>
 
 </manifest>
