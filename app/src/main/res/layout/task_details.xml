@@ -88,7 +88,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ToggleButton
@@ -96,40 +96,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOn="AC"
-            android:textOff="AC"/>
+            android:textOff="AC"
+            android:textOn="AC" />
 
         <ToggleButton
             android:id="@+id/toggleButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOn="BC"
-            android:textOff="BC"/>
+            android:textOff="BC"
+            android:textOn="BC" />
 
         <ToggleButton
             android:id="@+id/toggleButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOn="CC"
-            android:textOff="CC"/>
+            android:textOff="CC"
+            android:textOn="CC" />
 
         <ToggleButton
             android:id="@+id/toggleButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOn="DC"
-            android:textOff="DC"/>
+            android:textOff="DC"
+            android:textOn="DC" />
 
         <ToggleButton
             android:id="@+id/toggleButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textOn="EC"
-            android:textOff="EC"/>
+            android:textOff="EC"
+            android:textOn="EC" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
 
 </LinearLayout>
