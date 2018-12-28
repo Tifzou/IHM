@@ -1,19 +1,66 @@
 package insa.ihm;
 
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
-public class MainActivity extends Fragment {
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_main, container, false);
+public class MainActivity extends Activity {
 
 
-        return view;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        final View innerFrag = findViewById(R.id.fragment);
+
+        /* TODO: do the same thing for Chat button
+        ImageButton mChatButton = (ImageButton) view.findViewById(R.id.chat);
+        mChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                switch (view.getId()) {
+                    case R.id.group_info:
+                        Intent chatActivity = new Intent(getActivity(), Chat.class);
+                        startActivity(chatActivity);
+                        break;
+                }
+            }
+        });
+         */
+
+        ImageButton mDashboardButton = (ImageButton) innerFrag.findViewById(R.id.dashboardButton);
+        mDashboardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout);
+                //              getFragmentManager().beginTransaction().add(layout.getId(), new Dashboard(), "").commit();
+            }
+        });
+
+        ImageButton mTasksButton = (ImageButton) innerFrag.findViewById(R.id.tasksButton);
+        mTasksButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new ProjectDetails(), "").commit();
+            }
+        });
+
+        ImageButton mGroupInfoButton = (ImageButton) innerFrag.findViewById(R.id.group_infoButton);
+        mGroupInfoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new GroupInfo(), "").commit();
+            }
+        });
+    }
+
 }
