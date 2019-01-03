@@ -38,7 +38,7 @@
             <ListView
                 android:id="@+id/member_list_view"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:entries="@array/array" />
 
         </LinearLayout>
@@ -46,7 +46,7 @@
 
     </FrameLayout>
 
-
+<!--
     <fragment
         android:id="@+id/bottomNavBar"
         android:name="insa.ihm.BottomNavFrag"
@@ -54,5 +54,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         tools:layout="@layout/fragment_bottom_nav" />
-
+-->
 </LinearLayout>

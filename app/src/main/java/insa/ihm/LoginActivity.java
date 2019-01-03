@@ -90,7 +90,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 attemptLogin();
                 switch (view.getId()) {
                     case R.id.email_sign_in_button:
-                        Intent dashboardActivity = new Intent(LoginActivity.this, Dashboard.class);
+//                        Intent dashboardActivity = new Intent(LoginActivity.this, Dashboard.class);
+//                        startActivity(dashboardActivity);
+                        Intent dashboardActivity = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(dashboardActivity);
                         break;
                 }
