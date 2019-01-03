@@ -25,16 +25,17 @@
         </activity>
         <activity
             android:name=".Dashboard"
-            android:label="@string/title_activity_dashboard">
-        </activity>
+            android:label="@string/title_activity_dashboard"></activity>
         <activity
             android:name=".GroupInfo"
-            android:label="GroupInfo">
-        </activity>
+            android:label="GroupInfo"></activity>
         <activity
             android:name=".ProjectDetails"
-            android:label="ProjectDetails">
-        </activity>
+            android:label="ProjectDetails"></activity>
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
