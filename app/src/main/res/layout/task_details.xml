@@ -5,13 +5,12 @@
     android:layout_height="match_parent">
 
 
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Détails"
         android:background="@drawable/back"
+        android:text="Détails"
 
         android:textAlignment="center" />
 
