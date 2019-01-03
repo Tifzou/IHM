@@ -4,6 +4,7 @@ package insa.ihm;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +40,7 @@ public class MainActivity extends Activity {
         mDashboardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View aview) {
-                LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout);
+                DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
                 //              getFragmentManager().beginTransaction().add(layout.getId(), new Dashboard(), "").commit();
             }
         });
@@ -48,7 +49,7 @@ public class MainActivity extends Activity {
         mTasksButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View aview) {
-                LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout);
+                DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
                 getFragmentManager().beginTransaction().replace(layout.getId(), new ProjectDetails(), "").commit();
             }
         });
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
         mGroupInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View aview) {
-                LinearLayout layout = (LinearLayout) findViewById(R.id.main_layout);
+                DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
                 getFragmentManager().beginTransaction().replace(layout.getId(), new GroupInfo(), "").commit();
             }
         });
