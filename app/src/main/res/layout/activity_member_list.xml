@@ -8,51 +8,27 @@
     android:orientation="vertical"
     tools:context=".">
 
-    <FrameLayout
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.92">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back"
-                android:text="Nom projet"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Liste des membres"
-                android:textAlignment="center" />
-
-            <ListView
-                android:id="@+id/member_list_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/array" />
-
-        </LinearLayout>
-
-
-    </FrameLayout>
-
-<!--
-    <fragment
-        android:id="@+id/bottomNavBar"
-        android:name="insa.ihm.BottomNavFrag"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        tools:layout="@layout/fragment_bottom_nav" />
--->
+        android:background="@drawable/back"
+        android:text="Nom projet"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des membres"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/member_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/array" />
+
+
 </LinearLayout>

@@ -29,7 +29,9 @@ public class NavigationDrawer extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+
+/*        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -48,7 +50,7 @@ public class NavigationDrawer extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(this);*/
     }
 
     @Override
@@ -125,17 +127,17 @@ public class NavigationDrawer extends AppCompatActivity
     // 4 - Create each fragment page and show it
 
     private void showNewsFragment(){
-        if (this.fragmentAgile == null) this.fragmentAgile = TOREPLACE.newInstance();
+//        if (this.fragmentAgile == null) this.fragmentAgile = TOREPLACE.newInstance();
         this.startTransactionFragment(this.fragmentAgile);
     }
 
     private void showParamsFragment(){
-        if (this.fragmentIHM == null) this.fragmentIHM = TOREPLACE.newInstance();
+//        if (this.fragmentIHM == null) this.fragmentIHM = TOREPLACE.newInstance();
         this.startTransactionFragment(this.fragmentIHM);
     }
 
     private void showProfileFragment(){
-        if (this.fragmentWS == null) this.fragmentWS = TOREPLACE.newInstance();
+//        if (this.fragmentWS == null) this.fragmentWS = TOREPLACE.newInstance();
         this.startTransactionFragment(this.fragmentWS);
     }
 
@@ -143,9 +145,9 @@ public class NavigationDrawer extends AppCompatActivity
 
     // 3 - Generic method that will replace and show a fragment inside the MainActivity Frame Layout
     private void startTransactionFragment(Fragment fragment){
-        if (!fragment.isVisible()){
+        if (!fragment.isVisible()){/*
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.activity_main_frame_layout, fragment).commit();
+                    .replace(R.id.activity_main_frame_layout, fragment).commit();*/
         }
     }
 
