@@ -21,6 +21,14 @@ public class MainActivity extends Activity {
 
         final View innerFrag = findViewById(R.id.fragment);
 
+
+        /*Default activity*/
+        DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
+        getFragmentManager().beginTransaction().replace(layout.getId(), new ProjectSummary(), "").commit();
+
+
+
+
         /* TODO: do the same thing for Chat button
         ImageButton mChatButton = (ImageButton) view.findViewById(R.id.chat);
         mChatButton.setOnClickListener(new View.OnClickListener() {
