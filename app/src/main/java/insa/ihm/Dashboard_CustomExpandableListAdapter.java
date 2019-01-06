@@ -3,6 +3,7 @@ package insa.ihm;
 import java.util.HashMap;
 import java.util.List;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -82,6 +83,12 @@ public class Dashboard_CustomExpandableListAdapter extends BaseExpandableListAda
                 .findViewById(R.id.listTitle);
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
+
+        /*if(isExpanded){
+            convertView.setBackgroundColor(Color.GREEN);
+        }else{
+            convertView.setBackgroundColor(Color.BLUE);
+        }*/
         return convertView;
     }
 
