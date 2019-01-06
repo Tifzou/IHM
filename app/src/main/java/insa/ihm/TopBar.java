@@ -33,10 +33,16 @@ public class TopBar extends Fragment {
             @Override
             public void onClick(View aview) {
                 // https://stackoverflow.com/a/33616390
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
+           /*     Intent intent = new Intent(getActivity(), LoginActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_TASK_ON_HOME);
                 getActivity().finish();
                 startActivity(intent);
+           */
+
+
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new ProjectSummary(), "").commit();
+
             }
         });
 

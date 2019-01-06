@@ -48,4 +48,28 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+
+
+
+
+
+
+
+
+
+    <string-array name="ihm_tasks">
+        <item>IHM</item>
+        <item>Terminer les layouts</item>
+        <item>Terminer le rapport</item>
+    </string-array>
+    <string-array name="pld_tasks">
+        <item>PLD</item>
+        <item>Réaliser les tests unitaires</item>
+    </string-array>
+
+
+    <string name="ihm_spinner_prompt"></string>
+    <string name="pld_spinner_prompt"></string>
+
 </resources>
