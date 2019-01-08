@@ -1,10 +1,15 @@
 package insa.ihm;
 
 public class BaseMessage {
-    String message;
-    private User sender;
-    private long createdAt;
+    protected String message;
+    protected User sender;
+    protected long createdAt;
+    protected boolean belongsToCurrentUser; // is this message sent by us?
 
+    public BaseMessage(String text) {
+        this.message = text;
+        this.belongsToCurrentUser = false;
+    }
     public String getMessage() {
         return message;
     }
@@ -15,6 +20,10 @@ public class BaseMessage {
 
     public User getSender() {
         return sender;
+    }
+
+    public boolean isBelongsToCurrentUser() {
+        return belongsToCurrentUser;
     }
 }
 class User {
@@ -27,4 +36,8 @@ class User {
 }
 
 class UserMessage extends BaseMessage{
+    public UserMessage(String text) {
+        super(text);
+        this.belongsToCurrentUser = true;
+    }
 }
