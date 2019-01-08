@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.app.LoaderManager.LoaderCallbacks;
 
@@ -98,8 +99,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 switch (view.getId()) {
                     case R.id.email_sign_in_button:
                         currentUser.id = "0";
-                        Intent dashboardActivity = new Intent(LoginActivity.this, Dashboard.class);
-                        startActivity(dashboardActivity);
+                        Intent activity = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(activity);
                         break;
                 }
             }

@@ -10,28 +10,20 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
+        android:gravity="top"
         android:padding="0dp"
         android:paddingLeft="0dp"
         android:paddingTop="0dp"
         android:paddingRight="0dp"
-        android:paddingBottom="0dp"
-        android:gravity="top">
-
-        <fragment
-            android:id="@+id/bottomNavBar"
-            android:name="insa.ihm.BottomNavFrag"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            tools:layout="@layout/fragment_bottom_nav" />
-
+        android:paddingBottom="0dp">
+        
         <ImageButton
             android:id="@+id/msg_nonlu"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -48,7 +40,7 @@
         <ImageButton
             android:id="@+id/tache_rest"
             android:layout_width="343dp"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -59,23 +51,6 @@
             android:layout_marginTop="114dp"
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
-            android:contentDescription="@string/t_ches_restantes"
-            app:srcCompat="@android:drawable/bottom_bar" />
-
-        <ImageButton
-            android:id="@+id/tache_rest2"
-            android:layout_width="343dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginLeft="21dp"
-            android:layout_marginTop="247dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
             android:contentDescription="@string/t_ches_restantes"
             app:srcCompat="@android:drawable/bottom_bar" />
 
@@ -150,54 +125,25 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tache_urg_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/tache_rest2"
-            android:layout_alignBottom="@+id/tache_rest2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="51dp"
-            android:layout_marginLeft="51dp"
-            android:layout_marginTop="21dp"
-            android:layout_marginBottom="22dp"
-            android:text="@string/pr_sentation_ihm"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/drop_tache_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/tache_rest2"
-            android:layout_alignEnd="@+id/tache_rest2"
-            android:layout_alignRight="@+id/tache_rest2"
-            android:layout_alignBottom="@+id/tache_rest2"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="29dp"
-            android:layout_marginRight="29dp"
-            android:layout_marginBottom="24dp"
-            android:onClick="toggle_contents"
-            android:contentDescription="@string/pr_sentation_ihm"
-            app:srcCompat="@android:drawable/arrow_down_float" />
-
-
-        <TextView
-            android:id="@+id/droptext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="356dp"
+            android:layout_height="216dp"
             android:layout_above="@+id/bottomNavBar"
-            android:layout_below="@+id/tache_rest2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="74dp"
-            android:layout_marginLeft="74dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="104dp"
-            android:text="gchcgchgchcchkchgckhchc"/>
-
+            android:layout_below="@+id/tache_urg"
+            android:layout_alignStart="@+id/bottomNavBar"
+            android:layout_alignLeft="@+id/bottomNavBar"
+            android:layout_alignEnd="@+id/bottomNavBar"
+            android:layout_alignRight="@+id/bottomNavBar"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="4dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

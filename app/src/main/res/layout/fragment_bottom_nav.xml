@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="bottom"
+    android:orientation="vertical"
     tools:context=".BottomNavFrag">
 
-    <ImageButton
-        android:id="@+id/chatButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -15,34 +16,45 @@
         android:background="@android:color/transparent"
         android:tint="#ffff0000"
         android:contentDescription="@string/chat" />
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/tasksButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@android:drawable/ic_menu_agenda"
-        android:tint="#ffff0000"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/taches" />
+        <ImageButton
+            android:id="@+id/tasksButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_agenda"
+            android:tint="#ffff0000"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/taches" />
 
-    <ImageButton
-        android:id="@+id/group_infoButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@android:drawable/ic_dialog_info"
-        android:tint="#ffff0000"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/groupe" />
+        <ImageButton
+                android:id="@+id/dashboardButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/dashboard"
+                android:src="@android:drawable/ic_dialog_dialer"
+                android:tint="#ffff0000" />
 
-    <ImageButton
-        android:id="@+id/dashboardButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@android:drawable/ic_dialog_dialer"
-        android:tint="#ffff0000"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/dashboard" />
+        <ImageButton
+            android:id="@+id/group_infoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_dialog_info"
+            android:tint="#ffff0000"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/groupe" />
+
+        <ImageButton
+            android:id="@+id/chatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"android:contentDescription="@string/chat"
+            android:src="@android:drawable/stat_notify_chat"
+            android:tint="#ffff0000" />
+    </LinearLayout>
 </LinearLayout>

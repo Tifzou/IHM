@@ -4,13 +4,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/back"
         android:text="Détails"
+        android:background="@drawable/back"
 
         android:textAlignment="center" />
 
@@ -20,9 +19,7 @@
         android:layout_height="wrap_content"
         android:text="Nom" />
 
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
+    <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,14 +33,11 @@
         android:layout_height="wrap_content"
         android:text="Déte début" />
 
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
+    <EditText
         android:id="@+id/editText5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:text="20/12/18"
         android:inputType="date" />
 
     <TextView
@@ -52,15 +46,11 @@
         android:layout_height="wrap_content"
         android:text="Date fin" />
 
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
+    <EditText
         android:id="@+id/editText6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-
-        android:text="01/01/18"
         android:inputType="number" />
 
     <TextView
@@ -69,14 +59,11 @@
         android:layout_height="wrap_content"
         android:text="Description" />
 
-    <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
+    <EditText
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:text="La présentation du projet COLLABORAT'IF avec diaporama"
         android:inputType="textMultiLine" />
 
     <TextView
@@ -104,35 +91,58 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-
-        <CheckedTextView
-            android:layout_margin="20dp"
-            android:layout_width="wrap_content"
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkMark="?android:attr/textCheckMark"
-            android:textSize="20dp"
-            android:checked="true"
-            android:text="AC" />
+            android:layout_weight="1"
+            android:textOff="AC"
+            android:textOn="AC" />
 
-        <CheckedTextView
-            android:layout_margin="20dp"
-            android:layout_width="wrap_content"
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkMark="?android:attr/textCheckMark"
-            android:textSize="20dp"
-            android:checked="true"
-            android:text="BC" />
+            android:layout_weight="1"
+            android:textOff="BC"
+            android:textOn="BC" />
 
-        <CheckedTextView
-            android:layout_margin="20dp"
-            android:layout_width="wrap_content"
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkMark="?android:attr/textCheckMark"
-            android:textSize="20dp"
-            android:checked="true"
-            android:text="CC" />
+            android:layout_weight="1"
+            android:textOff="CC"
+            android:textOn="CC" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="DC"
+            android:textOn="DC" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="EC"
+            android:textOn="EC" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
 
 
 </LinearLayout>

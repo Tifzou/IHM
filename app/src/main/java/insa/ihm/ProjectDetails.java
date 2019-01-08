@@ -1,6 +1,7 @@
 package insa.ihm;
 
 
+import android.app.Fragment;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -8,11 +9,14 @@ import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.support.v4.graphics.ColorUtils;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.RatingBar;
 
 import java.util.HashMap;
 
-public class ProjectDetails extends AppCompatActivity {
+public class ProjectDetails extends Fragment {
 
     static HashMap<Float, Integer> colors = new HashMap<>();
 
@@ -32,12 +36,12 @@ public class ProjectDetails extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.task_details, container, false);
 
-        setContentView(R.layout.task_details);
 
-        RatingBar ratingBar = findViewById(R.id.ratingBar);
+        RatingBar ratingBar = (RatingBar) view.findViewById(R.id.ratingBar);
 
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
@@ -48,5 +52,6 @@ public class ProjectDetails extends AppCompatActivity {
             }
         });
 
+        return view;
     }
 }
