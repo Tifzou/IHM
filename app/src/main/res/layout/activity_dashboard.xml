@@ -126,13 +126,6 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <fragment
-            android:id="@+id/bottomNavBar"
-            android:name="insa.ihm.BottomNavFrag"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            tools:layout="@layout/fragment_bottom_nav" />
 
         <ExpandableListView
             android:id="@+id/expandableListView"
