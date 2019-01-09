@@ -22,17 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Dashboard"
-            android:label="@string/title_activity_dashboard" />
-        <activity
-            android:name=".GroupInfo"
-            android:label="GroupInfo">
-        </activity>
-        <activity
-            android:name=".ProjectDetails"
-            android:label="ProjectDetails">
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:label="MainActivity">
         </activity>

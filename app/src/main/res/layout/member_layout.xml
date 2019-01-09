@@ -6,39 +6,33 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_weight="1"
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:layout_width="10dp"
-        android:background="@android:drawable/presence_offline"
-        android:layout_height="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentLeft="true"
-        android:id="@+id/imageView" />
+        android:id="@+id/presence_macaron" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageView"
         android:layout_toRightOf="@+id/icon"
-        android:layout_toEndOf="@+id/icon">
+        android:layout_toEndOf="@+id/icon"
+        >
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            />
+    <TextView
+        android:id="@+id/name"
+        android:gravity="center_vertical"
 
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textAlignment="textEnd" />
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="TextView" />
+
 
     </LinearLayout>
 

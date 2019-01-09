@@ -2,6 +2,13 @@ package insa.ihm;
 
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.util.Pair;
+import java.util.List;
+import java.util.ResourceBundle;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
@@ -11,7 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MemberListAdapter extends ArrayAdapter<String> {
+public class MemberListAdapter extends ArrayAdapter<Pair<String, Boolean>> {
 
 
     @Override
@@ -25,8 +32,15 @@ public class MemberListAdapter extends ArrayAdapter<String> {
 
         TextView textView = (TextView) rowView.findViewById(R.id.name);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+        ImageView presence = (ImageView) rowView.findViewById(R.id.presence_macaron);
 
-        textView.setText(getItem(position));
+        if (getItem(position).second)
+            presence.setBackgroundResource(android.R.drawable.presence_online);
+        else
+            presence.setBackgroundResource(android.R.drawable.presence_invisible);
+
+
+        textView.setText(getItem(position).first);
 
         if(convertView == null) {
             imageView.setImageResource(R.drawable.contact);
@@ -36,7 +50,7 @@ public class MemberListAdapter extends ArrayAdapter<String> {
         return rowView;
     }
 
-    public MemberListAdapter(Context context, String[] values) {
+    public MemberListAdapter(Context context, List<Pair<String, Boolean>> values) {
         super(context, R.layout.member_layout, values);
     }
 }
