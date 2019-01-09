@@ -15,9 +15,10 @@
         android:src="@android:drawable/sym_action_chat"
         android:background="@android:color/transparent"
         android:tint="#ffff0000"
-        android:contentDescription="@string/chat" />
+        android:contentDescription="@string/chat"
         android:layout_gravity="bottom"
         android:orientation="horizontal">
+
 
         <ImageButton
             android:id="@+id/tasksButton"
@@ -53,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/transparent"android:contentDescription="@string/chat"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/chat"
             android:src="@android:drawable/stat_notify_chat"
             android:tint="#ffff0000" />
     </LinearLayout>

@@ -3,12 +3,10 @@ package insa.ihm;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
 public class BottomNavFrag extends Fragment {
 
@@ -45,6 +43,14 @@ public class BottomNavFrag extends Fragment {
             }
         });
 
+        ImageButton mChatButton = (ImageButton) view.findViewById(R.id.chatButton);
+        mChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                DrawerLayout layout = (DrawerLayout) view.findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new ChatFragment(), "").commit();
+            }
+        });
 
         return view;
 

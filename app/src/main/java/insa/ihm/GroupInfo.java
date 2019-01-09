@@ -1,9 +1,7 @@
 package insa.ihm;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Pair;
 import java.util.List;
 import android.view.LayoutInflater;
@@ -14,10 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-
 public class GroupInfo extends Fragment {
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
