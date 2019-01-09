@@ -5,17 +5,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Dashboard extends Fragment {
-
+public class Todo_List extends Fragment {
 
     ExpandableListView expandableListView;
     ExpandableListAdapter expandableListAdapter;
@@ -41,7 +39,7 @@ public class Dashboard extends Fragment {
 
 
         expandableListView = (ExpandableListView) view.findViewById(R.id.expandableListView);
-        expandableListDetail = Dashboard_ExpandableListDataPump.getData();
+        expandableListDetail = Todo_List_ExpandableListDataPump.getData();
         expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
         expandableListAdapter = new CustomExpandableListAdapter(getContext(), expandableListTitle, expandableListDetail);
         expandableListView.setAdapter(expandableListAdapter);

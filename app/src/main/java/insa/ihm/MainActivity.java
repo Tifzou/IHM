@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View aview) {
                 DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
-                getFragmentManager().beginTransaction().replace(layout.getId(), new ProjectDetails(), "").commit();
+                getFragmentManager().beginTransaction().replace(layout.getId(), new Todo_List(), "").commit();
             }
         });
 
