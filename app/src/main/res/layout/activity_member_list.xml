@@ -10,12 +10,15 @@
 
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/back"
-        android:text="Nom projet"
-        android:textAlignment="center" />
+        android:text="Web Sémantique"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_corner_blue"
+
+        android:textAlignment="center"
+        />
 
     <TextView
         android:id="@+id/textView2"
@@ -28,7 +31,9 @@
         android:id="@+id/member_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/array" />
+        android:entries="@array/array"
+        android:dividerHeight="10dp"
+        android:divider="#fbb"/>
 
 
 </LinearLayout>

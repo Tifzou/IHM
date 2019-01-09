@@ -68,10 +68,15 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
             android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:padding="5dp"
+
+            android:background="@drawable/rounded_corner_red"
             android:text="Tâches les plus urgentes"
             android:textSize="20dp"
             android:textStyle="bold" />
