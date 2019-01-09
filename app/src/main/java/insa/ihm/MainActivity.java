@@ -70,6 +70,16 @@ public class MainActivity extends Activity {
                 getFragmentManager().beginTransaction().replace(layout.getId(), new GroupInfo(), "").commit();
             }
         });
+
+        ImageButton mChatButton = (ImageButton) innerFrag.findViewById(R.id.chatButton);
+        mChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
+                Log.e("", "wtf");
+                getFragmentManager().beginTransaction().replace(layout.getId(), new ChatFragment(), "").commit();
+            }
+        });
     }
 
 }
