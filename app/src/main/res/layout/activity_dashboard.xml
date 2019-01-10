@@ -20,6 +20,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp">
 
+        <TextView
+            android:id="@+id/nom_projet_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:text="Projet IHM"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/msg_nonlu"
             android:layout_width="wrap_content"
@@ -29,13 +43,13 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
-            android:contentDescription="@string/message_non_lus"
-            android:background="@drawable/rounded_corner_black"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_black"
+            android:contentDescription="@string/message_non_lus" />
 
         <ImageButton
             android:id="@+id/tache_rest"
@@ -46,13 +60,13 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="114dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
-            android:contentDescription="@string/t_ches_restantes"
-            android:background="@drawable/rounded_corner_black"/>
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_black"
+            android:contentDescription="@string/t_ches_restantes" />
 
         <TextView
             android:id="@+id/textView"
@@ -110,7 +124,7 @@
             android:layout_marginRight="41dp"
             android:background="@drawable/ic_button_add"
             android:text="@string/nb_ressource"
-            android:textColor="@color/colorPrimaryWhite"/>
+            android:textColor="@color/colorPrimaryWhite" />
 
         <TextView
             android:id="@+id/tache_urg"
@@ -119,9 +133,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="22dp"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="210dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="222dp"
             android:text="@string/t_ches_les_plus_urgentes"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -136,11 +150,11 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginRight="14dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
             android:layout_marginBottom="4dp"
             android:divider="@android:color/darker_gray"
             android:dividerHeight="0.5dp"
