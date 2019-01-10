@@ -46,7 +46,7 @@ public class Dashboard extends Fragment {
         taskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View aview) {
-                DrawerLayout layout = (DrawerLayout) aview.findViewById(R.id.main_layout);
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
                 getFragmentManager().beginTransaction().replace(layout.getId(), new Todo_List(), "").commit();
             }
         });
