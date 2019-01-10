@@ -44,14 +44,14 @@
         android:textAlignment="center"/>
 
     <TextView
-        android:textStyle="bold"
-        android:textSize="20dp"
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Présentation IHM" />
+        android:text="Présentation des IHM"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView7"
