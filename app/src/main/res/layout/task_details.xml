@@ -10,8 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Web Sémantique"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
         android:padding="20dp"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimaryWhite"
         android:background="@drawable/rounded_corner_blue"
 
         android:textAlignment="center"
@@ -21,6 +24,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/back"
         android:text="Détails"
 
@@ -30,7 +34,11 @@
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nom" />
+        android:text="Nom"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textAlignment="center"/>
 
     <TextView
         android:textStyle="bold"
@@ -46,7 +54,12 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Déte début" />
+        android:text="Date début"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textAlignment="center"/>
+
 
     <TextView
         android:textStyle="bold"
@@ -62,7 +75,12 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date fin" />
+        android:text="Date fin"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textAlignment="center"/>
+
 
     <TextView
         android:textStyle="bold"
@@ -79,7 +97,12 @@
         android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Description" />
+        android:text="Description"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textAlignment="center"/>
+
 
     <TextView
         android:textStyle="bold"
@@ -95,7 +118,12 @@
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Priorité" />
+        android:text="Priorité"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textAlignment="center"/>
+
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -109,7 +137,12 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Membres affectés" />
+        android:text="Membres affectés"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryWhite"
+        android:textAlignment="center"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -122,27 +155,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checkMark="?android:attr/textCheckMark"
+            android:background="@drawable/rounded_corner_blue"
             android:textSize="20dp"
             android:checked="true"
-            android:text="AC" />
+            android:text="AC"
+            android:textColor="@color/colorPrimaryWhite"/>
 
         <CheckedTextView
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checkMark="?android:attr/textCheckMark"
+            android:background="@drawable/rounded_corner_blue"
             android:textSize="20dp"
             android:checked="true"
-            android:text="BC" />
+            android:text="BC"
+            android:textColor="@color/colorPrimaryWhite"/>
 
         <CheckedTextView
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checkMark="?android:attr/textCheckMark"
+            android:background="@drawable/rounded_corner_blue"
             android:textSize="20dp"
             android:checked="true"
-            android:text="CC" />
+            android:text="CC"
+            android:textColor="@color/colorPrimaryWhite"/>
     </LinearLayout>
 
 

@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
-
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
@@ -36,7 +35,7 @@
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
             android:contentDescription="@string/message_non_lus"
-            app:srcCompat="@android:drawable/bottom_bar" />
+            android:background="@drawable/rounded_corner_black"/>
 
         <ImageButton
             android:id="@+id/tache_rest"
@@ -53,7 +52,7 @@
             android:layout_marginEnd="21dp"
             android:layout_marginRight="21dp"
             android:contentDescription="@string/t_ches_restantes"
-            app:srcCompat="@android:drawable/bottom_bar" />
+            android:background="@drawable/rounded_corner_black"/>
 
         <TextView
             android:id="@+id/textView"
@@ -68,7 +67,7 @@
             android:layout_marginTop="28dp"
             android:layout_marginBottom="28dp"
             android:text="@string/message_non_lus"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/colorPrimaryWhite" />
 
         <TextView
             android:id="@+id/textView3"
@@ -83,7 +82,7 @@
             android:layout_marginTop="28dp"
             android:layout_marginBottom="28dp"
             android:text="@string/t_ches_restantes"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/colorPrimaryWhite" />
 
         <Button
             android:id="@+id/nb_msg"
@@ -97,7 +96,7 @@
             android:layout_marginRight="42dp"
             android:background="@drawable/ic_button_add"
             android:text="@string/nb_ressource"
-            tools:text="3" />
+            android:textColor="@color/colorPrimaryWhite" />
 
         <Button
             android:id="@+id/nb_msg2"
@@ -110,7 +109,8 @@
             android:layout_marginEnd="41dp"
             android:layout_marginRight="41dp"
             android:background="@drawable/ic_button_add"
-            android:text="@string/nb_ressource" />
+            android:text="@string/nb_ressource"
+            android:textColor="@color/colorPrimaryWhite"/>
 
         <TextView
             android:id="@+id/tache_urg"

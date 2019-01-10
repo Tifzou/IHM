@@ -68,16 +68,16 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
             android:layout_gravity="center"
-            android:textColor="#fff"
-            android:padding="5dp"
-
+            android:layout_weight="1"
             android:background="@drawable/rounded_corner_red"
+            android:padding="5dp"
             android:text="Tâches les plus urgentes"
+
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryWhite"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -85,8 +85,8 @@
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="top"
+            android:layout_weight="1"
             android:entries="@array/ihm_tasks"
             android:prompt="@string/ihm_spinner_prompt"
             android:spinnerMode="dialog" />
@@ -95,8 +95,8 @@
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="top"
+            android:layout_weight="1"
             android:entries="@array/pld_tasks"
             android:prompt="@string/pld_spinner_prompt"
             android:spinnerMode="dialog" />
