@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_ihm"
             android:icon="@drawable/ic_menu_camera"
-            android:title="IHM" />
-        <item
-            android:id="@+id/nav_ws"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Web Semantique" />
+            android:title="Projet IHM" />
         <item
             android:id="@+id/nav_agile"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="PLD Agile" />
+        <item
+            android:id="@+id/nav_ws"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Web Semantique" />
 
     </group>
 
