@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="Communicat'IF"
+        android:text="Collaborat'IF"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textStyle="bold|italic"
         android:textAlignment="center"
