@@ -2,11 +2,14 @@ package insa.ihm;
 
 import android.app.Fragment;
 import android.os.Bundle;
+
 import android.util.Pair;
 import java.util.List;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -32,7 +35,4 @@ public class GroupInfo extends Fragment {
 
         return view;
     }
-
-
-
-    }
+}

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
@@ -48,5 +47,4 @@ public class Dashboard extends Fragment {
 
         return view;
     }
-
 }

@@ -2,10 +2,12 @@ package insa.ihm;
 
 import android.app.Fragment;
 import android.os.Bundle;
+
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -50,13 +52,9 @@ public class ChatFragment extends Fragment {
         return  view;
     }
 
-
-
-
     private void receiveMessage(){
         String msg = editText1.getText().toString();
     }
-
 
     /** receive msg */
     private void addItems() {

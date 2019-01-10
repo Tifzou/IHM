@@ -32,8 +32,6 @@ public class ProjectSummary extends Fragment {
         ArrayAdapter<String> adapter2 = new ProjectListAdapter(getActivity(), archives);
         listView2.setAdapter(adapter2);
 
-
-
         Button deconnexionButton = (Button) view.findViewById(R.id.logout);
         deconnexionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +40,6 @@ public class ProjectSummary extends Fragment {
                 getActivity().finish();
             }
         });
-
 
         // https://github.com/commonsguy/cw-omnibus/blob/master/WidgetCatalog/Tab/app/src/main/java/com/commonsware/android/tabhost/TabDemo.java
 
