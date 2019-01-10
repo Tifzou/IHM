@@ -30,7 +30,8 @@
         android:layout_height="wrap_content"
         android:entries="@array/array"
         android:dividerHeight="10dp"
-        android:divider="#fbb"/>
+        android:divider="#fbb"
+        android:clickable="false"/>
 
 
 </LinearLayout>
