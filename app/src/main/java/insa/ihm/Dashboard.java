@@ -51,14 +51,14 @@ public class Dashboard extends Fragment {
             }
         });
 
-        /*ImageButton messageButton = (ImageButton) view.findViewById(R.id.dashboardButton);
+        ImageButton messageButton = (ImageButton) view.findViewById(R.id.msg_nonlu);
         messageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View aview) {
-                DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
-                getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new ChatFragment(), "").commit();
             }
-        });*/
+        });
 
         expandableListView = (ExpandableListView) view.findViewById(R.id.expandableListView);
         expandableListDetail = Dashboard_ExpandableListDataPump.getData();
