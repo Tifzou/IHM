@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:nestedScrollingEnabled="true"
-        android:stackFromBottom="true">
+        android:stackFromBottom="true"
+        android:divider="@android:color/transparent">
     </ListView>
 
     <RelativeLayout

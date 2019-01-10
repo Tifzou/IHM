@@ -3,6 +3,7 @@ package insa.ihm;
 import android.app.Fragment;
 import android.os.Bundle;
 
+import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,7 +48,19 @@ public class ChatFragment extends Fragment {
             }
         });
 
+        final Handler handler = new Handler();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                adapter.add(new BaseMessage("testing received message"));
+            }
+        };
+
+        handler.postDelayed(runnable, 1000);
+        handler.postDelayed(runnable, 3500);
+
         return  view;
     }
+
 
 }
