@@ -37,6 +37,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/dashboard"
                 android:src="@android:drawable/ic_dialog_dialer"
+                android:background="@android:color/transparent"
                 android:tint="#ffff0000" />
 
         <ImageButton
