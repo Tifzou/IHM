@@ -1,14 +1,11 @@
 package insa.ihm;
 
-
 import android.app.Fragment;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
-import android.support.v4.graphics.ColorUtils;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +30,6 @@ public class ProjectDetails extends Fragment {
         colors.put(4.5f, Color.rgb(200, 70, 0));
         colors.put(5.0f, Color.rgb(200, 50, 0));
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -63,9 +63,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
 
+    private static User currentUser;
+
+    public static User getCurrentUser() {
+        return currentUser;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        currentUser = new User();
         setContentView(R.layout.activity_login);
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
@@ -90,9 +97,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 attemptLogin();
                 switch (view.getId()) {
                     case R.id.email_sign_in_button:
+                        currentUser.id = "0";
                         Intent activity = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(activity);
-
                         break;
                 }
             }
@@ -200,12 +207,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        // return email.contains("@");
+        return true;
     }
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 4;
+        // return password.length() > 4;
+        return true;
     }
 
     /**
