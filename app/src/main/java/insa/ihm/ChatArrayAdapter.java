@@ -18,13 +18,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** from https://stackoverflow.com/questions/27466397/trying-create-a-chat-with-fragment **/
-public class DiscussArrayAdapter extends ArrayAdapter<BaseMessage> {
+public class ChatArrayAdapter extends ArrayAdapter<BaseMessage> {
 
     private TextView newMessage;
     private List<BaseMessage> messages = new ArrayList<BaseMessage>();
     private LinearLayout wrapper;
 
-    public DiscussArrayAdapter(Context context, int resource) {
+    public ChatArrayAdapter(Context context, int resource) {
         super(context, resource);
     }
 

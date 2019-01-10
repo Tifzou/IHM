@@ -15,7 +15,7 @@ import android.widget.ListView;
 
 /** from https://stackoverflow.com/questions/27466397/trying-create-a-chat-with-fragment **/
 public class ChatFragment extends Fragment {
-    private DiscussArrayAdapter adapter;
+    private ChatArrayAdapter adapter;
     private EditText editText1;
 
     @Override
@@ -23,7 +23,7 @@ public class ChatFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
         ListView lv = (ListView) view.findViewById(R.id.listView1);
 
-        adapter = new DiscussArrayAdapter(view.getContext(), R.layout.list_messages_chat);
+        adapter = new ChatArrayAdapter(view.getContext(), R.layout.list_messages_chat);
         lv.setAdapter(adapter);
 
         editText1 = (EditText)view.findViewById(R.id.chatText);
