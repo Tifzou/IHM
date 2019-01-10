@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/text_message_body"
         android:text="hello, hello!"
-        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:background="@drawable/chat_bubble_sent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxWidth="240dp"
