@@ -34,7 +34,7 @@ public class ProjectDetails extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.task_details, container, false);
+        View view = inflater.inflate(R.layout.activity_todo_detail, container, false);
 
 
         RatingBar ratingBar = (RatingBar) view.findViewById(R.id.ratingBar);

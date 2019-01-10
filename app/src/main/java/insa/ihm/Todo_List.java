@@ -35,6 +35,16 @@ public class Todo_List extends Fragment {
         expandableListView.expandGroup(0,true);
         expandableListView.expandGroup(1,true);
 
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new Todo_Detail(), "").commit();
+                return false;
+            }
+        });
+
         ImageButton addButton = (ImageButton) view.findViewById(R.id.addTaskButton);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
