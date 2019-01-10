@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:src="@android:drawable/sym_action_chat"
         android:background="@android:color/transparent"
@@ -23,7 +23,7 @@
         <ImageButton
             android:id="@+id/tasksButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@android:drawable/ic_menu_agenda"
             android:tint="@color/colorPrimaryRed"
@@ -33,7 +33,7 @@
         <ImageButton
                 android:id="@+id/dashboardButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/dashboard"
                 android:src="@android:drawable/ic_dialog_dialer"
@@ -43,7 +43,7 @@
         <ImageButton
             android:id="@+id/group_infoButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@android:drawable/ic_dialog_info"
             android:tint="@color/colorPrimaryRed"
@@ -53,7 +53,7 @@
         <ImageButton
             android:id="@+id/chatButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/chat"
