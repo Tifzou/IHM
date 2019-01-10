@@ -1,13 +1,13 @@
 package insa.ihm;
 
+import android.app.Fragment;
 import android.os.Bundle;
 
-import android.support.v4.app.Fragment;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -88,14 +88,17 @@ public class NavigationDrawer extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
+        System.out.print(id);
         if (id == R.id.nav_ihm) {
-
-
-
+            System.out.println("Yo !");
+            getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         } else if (id == R.id.nav_agile) {
-
+            System.out.println("I'm here !");
+            getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         } else if (id == R.id.nav_ws) {
-
+            System.out.println("Little and viciuos bug !");
+            getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
