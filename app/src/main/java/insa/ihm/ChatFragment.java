@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+/** from https://stackoverflow.com/questions/27466397/trying-create-a-chat-with-fragment **/
 public class ChatFragment extends Fragment {
     private DiscussArrayAdapter adapter;
     private EditText editText1;
