@@ -9,7 +9,7 @@ public class Dashboard_ExpandableListDataPump {
         HashMap<String, List<String>> expandableListDetail = new HashMap<String, List<String>>();
 
         List<String> presentation = new ArrayList<String>();
-        presentation.add("Détails à afficher ??");
+        presentation.add("Préparer l'oral");
 
         expandableListDetail.put("Présentation IHM", presentation);
         return expandableListDetail;

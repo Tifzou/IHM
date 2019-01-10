@@ -30,7 +30,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/back"
         android:text="Détails"
-
+        android:textColor="@color/colorPrimaryWhite"
         android:textAlignment="center" />
 
     <TextView

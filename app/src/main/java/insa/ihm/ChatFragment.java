@@ -53,7 +53,7 @@ public class ChatFragment extends Fragment {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                adapter.add(new BaseMessage("testing received message"));
+                adapter.add(new BaseMessage("Exemple de message pour la démonstration"));
             }
         };
 

@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:maxWidth="240dp"
         android:padding="8dp"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimaryWhite"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
