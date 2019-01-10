@@ -32,7 +32,7 @@ public class BottomNavFrag extends Fragment {
             @Override
             public void onClick(View aview) {
                 DrawerLayout layout = (DrawerLayout) view.findViewById(R.id.main_layout);
-                getFragmentManager().beginTransaction().replace(layout.getId(), new ProjectDetails(), "").commit();
+                getFragmentManager().beginTransaction().replace(layout.getId(), new Todo_List(), "").commit();
             }
         });
 

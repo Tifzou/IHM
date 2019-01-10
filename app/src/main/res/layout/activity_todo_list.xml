@@ -11,35 +11,65 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="494dp"
         android:layout_margin="0dp"
         android:gravity="top"
         android:padding="0dp"
         android:paddingLeft="0dp"
         android:paddingTop="0dp"
         android:paddingRight="0dp"
-        android:paddingBottom="0dp">
+        android:paddingBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/nom_projet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="20dp"
+            android:text="Projet IHM"
+            android:textAlignment="center"
+            android:textColor="#fff" />
 
         <ExpandableListView
             android:id="@+id/expandableListView"
-            android:layout_width="356dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nom_projet"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="13dp"
-            android:layout_marginRight="13dp"
-            android:layout_marginBottom="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="93dp"
             android:divider="@android:color/darker_gray"
             android:dividerHeight="0.5dp"
+            android:headerDividersEnabled="false"
             android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableListView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="160dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_input_add" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
