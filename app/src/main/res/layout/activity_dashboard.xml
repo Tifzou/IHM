@@ -127,7 +127,6 @@
             android:textStyle="bold" />
 
 
-
         <ExpandableListView
             android:id="@+id/expandableListView"
             android:layout_width="356dp"

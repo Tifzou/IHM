@@ -17,9 +17,9 @@ public class ChatFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
-        ListView lv = (ListView) getView().findViewById(R.id.member_list_view);
+        ListView lv = (ListView) view.findViewById(R.id.listView1);
 
-        adapter = new DiscussArrayAdapter(getView().getContext(), R.layout.list_messages_chat);
+        adapter = new DiscussArrayAdapter(view.getContext(), R.layout.list_messages_chat);
         lv.setAdapter(adapter);
 
         editText1 = (EditText)view.findViewById(R.id.chatText);
