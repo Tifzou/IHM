@@ -30,8 +30,7 @@ public class ChatFragment extends Fragment {
                 // If the event is a key-down event on the "enter" button
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     // Perform action on key press
-                    //adapter.add(new OneComment(false, editText1.getText().toString()));
-                    receiveMessage();
+                    adapter.add(new UserMessage(editText1.getText().toString()));
                     editText1.setText("");
                     return true;
                 }
@@ -43,22 +42,12 @@ public class ChatFragment extends Fragment {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                adapter.add(new BaseMessage(editText1.getText().toString()));
-                receiveMessage();
+                adapter.add(new UserMessage(editText1.getText().toString()));
                 editText1.setText("");
             }
         });
 
         return  view;
-    }
-
-    private void receiveMessage(){
-        String msg = editText1.getText().toString();
-    }
-
-    /** receive msg */
-    private void addItems() {
-        adapter.add(new BaseMessage( "Hello bubbles!"));
     }
 
 }
