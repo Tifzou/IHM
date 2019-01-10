@@ -24,9 +24,9 @@ public class GroupInfo extends Fragment {
 
 
         List<Pair<String, Boolean>> membres = new ArrayList<>();
-        membres.add(new Pair<>("Nom 1, prenom 1", true));
-        membres.add(new Pair<>("Nom 2, prenom 2", false));
-        membres.add(new Pair<>("Nom 3, prenom 3", true));
+        membres.add(new Pair<>("Sterner, Léo", true));
+        membres.add(new Pair<>("Barge, Edouard", false));
+        membres.add(new Pair<>("Floch, Tifenn", true));
 
         ListView listView = (ListView) view.findViewById(R.id.member_list_view);
 
