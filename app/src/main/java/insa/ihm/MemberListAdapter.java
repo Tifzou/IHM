@@ -1,16 +1,9 @@
 package insa.ihm;
 
-
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.util.Pair;
 import java.util.List;
-import java.util.ResourceBundle;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MemberListAdapter extends ArrayAdapter<Pair<String, Boolean>> {
-
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
