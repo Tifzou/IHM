@@ -57,7 +57,7 @@ public class ChatFragment extends Fragment {
         };
 
         handler.postDelayed(runnable, 1000);
-        handler.postDelayed(runnable, 3500);
+        handler.postDelayed(runnable, 5000);
 
         return  view;
     }

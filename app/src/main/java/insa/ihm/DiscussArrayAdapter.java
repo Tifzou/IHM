@@ -19,8 +19,8 @@ import java.util.List;
 
 public class DiscussArrayAdapter extends ArrayAdapter<BaseMessage> {
 
-    private TextView countryName;
-    private List<BaseMessage> countries = new ArrayList<BaseMessage>();
+    private TextView newMessage;
+    private List<BaseMessage> messages = new ArrayList<BaseMessage>();
     private LinearLayout wrapper;
 
     public DiscussArrayAdapter(Context context, int resource) {
@@ -29,16 +29,16 @@ public class DiscussArrayAdapter extends ArrayAdapter<BaseMessage> {
 
     @Override
     public void add(BaseMessage object) {
-        countries.add(object);
+        messages.add(object);
         super.add(object);
     }
 
     public int getCount() {
-        return this.countries.size();
+        return this.messages.size();
     }
 
     public BaseMessage getItem(int index) {
-        return this.countries.get(index);
+        return this.messages.get(index);
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -50,20 +50,16 @@ public class DiscussArrayAdapter extends ArrayAdapter<BaseMessage> {
 
         wrapper = (LinearLayout) row.findViewById(R.id.wrapper);
 
-        BaseMessage coment = getItem(position);
+        BaseMessage message = getItem(position);
 
-        countryName = (TextView) row.findViewById(R.id.comment);
+        newMessage = (TextView) row.findViewById(R.id.comment);
 
-        countryName.setText(coment.getMessage());
+        newMessage.setText(message.getMessage());
 
-        countryName.setBackgroundResource(coment.isBelongsToCurrentUser() ? R.drawable.chat_bubble_sent : R.drawable.chat_bubble_received);
-        wrapper.setGravity(coment.isBelongsToCurrentUser() ? Gravity.RIGHT : Gravity.LEFT);
+        newMessage.setBackgroundResource(message.isBelongsToCurrentUser() ? R.drawable.chat_bubble_sent : R.drawable.chat_bubble_received);
+        wrapper.setGravity(message.isBelongsToCurrentUser() ? Gravity.RIGHT : Gravity.LEFT);
 
         return row;
-    }
-
-    public Bitmap decodeToBitmap(byte[] decodedByte) {
-        return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
     }
 
 }
