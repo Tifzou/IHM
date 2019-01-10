@@ -17,7 +17,7 @@
         android:minHeight="40dp"
         android:layout_gravity="left"
         android:layout_weight="1"
-        android:src="@drawable/burger_menu_icon"
+        app:srcCompat="@drawable/burger_menu_icon"
         android:tint="#ffff0000"
         android:tintMode="src_atop"
 
@@ -45,7 +45,7 @@
         android:minHeight="40dp"
         android:layout_weight="1"
         android:layout_gravity="right"
-        android:src="@drawable/ic_home_black_24dp"
+        app:srcCompat="@drawable/ic_home_black_24dp"
         android:tint="#ffff0000"
         android:tintMode="src_atop"
 
