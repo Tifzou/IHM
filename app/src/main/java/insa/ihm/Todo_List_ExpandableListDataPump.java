@@ -12,13 +12,13 @@ public class Todo_List_ExpandableListDataPump {
         retard.add("Débuter le développement");
 
         List<String> today = new ArrayList<>();
-        today.add("Validation des changements");
+        today.add("Présentation des IHM");
 
         List<String> demain = new ArrayList<>();
-        demain.add("Aucune tâche présente");
+        demain.add("Réaliser les tests unitaires");
 
         List<String> plusTard = new ArrayList<>();
-        plusTard.add("Aucune tâche présente");
+        plusTard.add("Rendre le projet");
 
         expandableListDetail.put("En retard", retard);
         expandableListDetail.put("Aujourd'hui", today);
