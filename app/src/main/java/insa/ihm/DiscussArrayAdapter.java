@@ -17,6 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+/** from https://stackoverflow.com/questions/27466397/trying-create-a-chat-with-fragment **/
 public class DiscussArrayAdapter extends ArrayAdapter<BaseMessage> {
 
     private TextView newMessage;

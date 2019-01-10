@@ -17,7 +17,7 @@
         android:minHeight="40dp"
         android:layout_gravity="left"
         android:layout_weight="1"
-        app:srcCompat="@drawable/burger_menu_icon"
+        android:src="@drawable/burger_menu_icon"
         android:tint="#ffff0000"
         android:tintMode="src_atop"
 
@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="Communicat'IF"
+        android:text="Collaborat'IF"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textStyle="bold|italic"
         android:textAlignment="center"
@@ -45,10 +45,9 @@
         android:minHeight="40dp"
         android:layout_weight="1"
         android:layout_gravity="right"
-        app:srcCompat="@drawable/ic_home_black_24dp"
+        android:src="@drawable/ic_home_black_24dp"
         android:tint="#ffff0000"
         android:tintMode="src_atop"
-
         />
 
 </LinearLayout>
