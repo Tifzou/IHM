@@ -1,14 +1,19 @@
 package insa.ihm;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,6 +49,39 @@ public class Todo_List extends Fragment {
                 return false;
             }
         });
+
+        expandableListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
+                    int groupPosition = ExpandableListView.getPackedPositionGroup(id);
+                    int childPosition = ExpandableListView.getPackedPositionChild(id);
+                    final String nameTask=expandableListDetail.get(expandableListTitle.get(groupPosition)).get(childPosition);
+
+                    new AlertDialog.Builder(getActivity())
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setTitle("Supprimer la tâche ?")
+                            .setMessage("Souhaitez-vous supprimer la tâche "+'"'+nameTask+'"'+" ?")
+                            .setPositiveButton("Supprimer", new DialogInterface.OnClickListener()
+                            {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Toast.makeText(getActivity(),
+                                            "Täche "+'"'+nameTask +'"'+ " supprimée.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
+
+                            })
+                            .setNegativeButton("Annuler", null)
+                            .show();
+                    // Return true as we are handling the event.
+                    return true;
+                }
+
+                return false;
+            }
+        });
+
 
         ImageButton addButton = (ImageButton) view.findViewById(R.id.addTaskButton);
         addButton.setOnClickListener(new View.OnClickListener() {
