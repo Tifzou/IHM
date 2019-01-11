@@ -19,7 +19,7 @@ public class ProjectSummary extends Fragment {
         final View view = inflater.inflate(R.layout.activity_summary, container, false);
 
 
-        String[] projetsEnCours = new String[] {"IHM", "PLD AGILE"};
+        String[] projetsEnCours = new String[] {"Projet IHM", "PLD AGILE"};
         String[] archives = new String[] {"Web sémantique"};
 
         ListView listView1 = (ListView) view.findViewById(R.id.current_projects);

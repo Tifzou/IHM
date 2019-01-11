@@ -86,11 +86,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
 
-        /*if(isExpanded){
-            convertView.setBackgroundColor(Color.GREEN);
-        }else{
-            convertView.setBackgroundColor(Color.BLUE);
-        }*/
         return convertView;
     }
 
