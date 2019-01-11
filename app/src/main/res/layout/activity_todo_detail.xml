@@ -186,13 +186,22 @@
             android:text="CC"
             android:textColor="@color/colorPrimaryWhite"/>
     </LinearLayout>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
 
-    <Button
-        android:id="@+id/returnButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Retour au planning" />
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Retour" />
 
+        <Button
+            android:id="@+id/terminateButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Terminer" />
 
+    </LinearLayout>
 </LinearLayout>
 </ScrollView>

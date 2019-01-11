@@ -20,10 +20,14 @@ public class Todo_List_ExpandableListDataPump {
         List<String> plusTard = new ArrayList<>();
         plusTard.add("Rendre le projet");
 
+
+        List<String> valide = new ArrayList<>();
+        valide.add("Aucune tâche");
+
         expandableListDetail.put("En retard", retard);
         expandableListDetail.put("Aujourd'hui", today);
         expandableListDetail.put("Pour demain", demain);
-        expandableListDetail.put("Plus tard", plusTard);
+        expandableListDetail.put("Validée", valide);
         return expandableListDetail;
     }
 }

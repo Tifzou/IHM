@@ -26,6 +26,16 @@ public class Todo_Detail extends Fragment {
             }
         });
 
+        Button validateButton = (Button) view.findViewById(R.id.terminateButton);
+
+        validateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View aview) {
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new Todo_List(), "").commit();
+            }
+        });
+
         return view;
     }
 
