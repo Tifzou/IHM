@@ -17,7 +17,6 @@
             android:id="@+id/nav_ws"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Web Semantique" />
-
     </group>
 
 

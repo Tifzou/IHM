@@ -24,6 +24,7 @@ public class NavigationDrawer extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        System.out.println("OKK");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
 
@@ -89,7 +90,6 @@ public class NavigationDrawer extends AppCompatActivity
         int id = item.getItemId();
 
         DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
-        System.out.print(id);
         if (id == R.id.nav_ihm) {
             getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         } else if (id == R.id.nav_agile) {
