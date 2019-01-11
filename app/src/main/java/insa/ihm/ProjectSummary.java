@@ -2,8 +2,10 @@ package insa.ihm;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -26,11 +28,27 @@ public class ProjectSummary extends Fragment {
 
         ArrayAdapter<String> adapter1 = new ProjectListAdapter(getActivity(), projetsEnCours);
         listView1.setAdapter(adapter1);
+        listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
+            }
+        });
 
         ListView listView2 = (ListView) view.findViewById(R.id.archives);
 
         ArrayAdapter<String> adapter2 = new ProjectListAdapter(getActivity(), archives);
         listView2.setAdapter(adapter2);
+        listView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                DrawerLayout layout = (DrawerLayout) getActivity().findViewById(R.id.main_layout);
+                getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
+            }
+        });
 
         Button deconnexionButton = (Button) view.findViewById(R.id.logout);
         deconnexionButton.setOnClickListener(new View.OnClickListener() {
