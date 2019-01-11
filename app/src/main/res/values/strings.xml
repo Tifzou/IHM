@@ -137,9 +137,9 @@
     <string name="title_activity_navigation_drawer">NavigationDrawer</string>
 
     <string-array name="ihm_tasks">
-        <item>IHM</item>
-        <item>Terminer les layouts</item>
-        <item>Terminer le rapport</item>
+        <item>Projet IHM</item>
+        <item>Débuter le développement</item>
+        <item>Présentation des IHM</item>
     </string-array>
     <string-array name="pld_tasks">
         <item>PLD</item>

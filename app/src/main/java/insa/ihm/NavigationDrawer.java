@@ -91,13 +91,10 @@ public class NavigationDrawer extends AppCompatActivity
         DrawerLayout layout = (DrawerLayout) findViewById(R.id.main_layout);
         System.out.print(id);
         if (id == R.id.nav_ihm) {
-            System.out.println("Yo !");
             getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         } else if (id == R.id.nav_agile) {
-            System.out.println("I'm here !");
             getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         } else if (id == R.id.nav_ws) {
-            System.out.println("Little and viciuos bug !");
             getFragmentManager().beginTransaction().replace(layout.getId(), new Dashboard(), "").commit();
         }
 
